@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="loadersdiv">
+            <div class="loader1"></div>
+            <div class="loader2">Loading<span class="dot1">.</span><span class="dot2">.</span><span class="dot3">.</span></div>
+        </div>
+        <div class="contactformdiv" style="display: none;">
+            <h1>CONTACT FORM</h1>
+            <div style="padding: 30px; margin-top:20px; background-color: #fff; margin-left: 250px; margin-right: 250px;">
+                <h2>Tell me something about you.</h2>
+                <form action="#" method="post">
+                    <div class="form-group">
+                      <label for="name">Name:</label>
+                      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="rating">On a scale of 1 to 10, how good was it?</label>
+                      <input type="number" id="rating" name="rating" placeholder="Enter a number between 1 and 10" required>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="contact-time">At what time can we contact you?</label>
+                      <div>
+                        <input type="radio" id="morning" name="contact-time" value="morning" />
+                        <label for="morning">Morning</label>
+                     
+                        <input type="radio" id="afternoon" name="contact-time" value="afternoon" />
+                        <label for="afternoon">Afternoon</label>
+                    
+                        <input type="radio" id="evening" name="contact-time" value="evening" />
+                        <label for="evening">Evening</label>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label>What emotions did you experience?</label>
+                      <label><input type="checkbox" name="emotions[]" value="Excited"> Excited</label>
+                      <label><input type="checkbox" name="emotions[]" value="Humbled"> Humbled</label>
+                      <label><input type="checkbox" name="emotions[]" value="Elated"> Elated</label>
+                      <label><input type="checkbox" name="emotions[]" value="Loved"> Loved</label>
+                      <label><input type="checkbox" name="emotions[]" value="Enthusiased"> Enthusiased</label>
+                    </div>
+                    
+                    <div class="form-group">
+                      <label for="positive-experience">Please describe your positive experience:</label>
+                      <textarea id="positive-experience" name="positive-experience" rows="4" placeholder="Enter your experience here..." required></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit-button">
+                  </form>
+            </div>
+            <div class="display-area" id="display-area"></div>
+        </div>
+
+
+        
+        <script src="main.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(127, 184, 205);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loadersdiv {
+    align-items: center;
+    margin-top: 350px;
+}
+
+.loader1, .loader2 {
+    display: block;
+}
+
+.loader1 {
+    margin: auto;
+    border: 7px solid #13395f;
+    border-radius: 50%;
+    border-top: 7px solid #FF7A59;
+    width: 50px;
+    height: 50px;
+    animation: spinner 2s linear infinite;
+  }
+  
+  @keyframes spinner {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+.loader2 {
+    font-size: 30px;
+    margin-left: 47%;
+    margin-top: 10px;
+  }
+  
+  .dot1, .dot2, .dot3 {
+    animation: dotanimation 1.5s infinite;
+  }
+  
+  @keyframes dotanimation {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
+
+  .contactformdiv {
+    text-align: center;
+    margin: 20px;
+    padding: 50px;
+  }
+
+.form-group {
+    margin-bottom: 7px;
+}
+label {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="rating"]
+select,
+textarea {
+  width: calc(100% - 700px);
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+textarea {
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: rgb(38, 68, 94);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: rgb(26, 50, 71);
+}
